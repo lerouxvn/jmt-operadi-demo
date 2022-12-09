@@ -1,0 +1,95 @@
+<mat-toolbar i18n color="primary">
+    Operadi
+    <div fxFlex="100%"></div>
+    <!--  <button mat-icon-button (click)="menuService.showSmall()">-->
+    <!--    <mat-icon>add</mat-icon>-->
+    <!--  </button>-->
+    <!--  <button mat-icon-button (click)="addMenuDefault()">-->
+    <!--    <mat-icon>add</mat-icon>-->
+    <!--  </button>-->
+    <button mat-icon-button routerLink="/company">
+        <mat-icon>business</mat-icon>
+    </button>
+    <button mat-icon-button routerLink="/person">
+        <mat-icon>people_alt</mat-icon>
+    </button>
+    <button mat-icon-button routerLink="/couplings">
+        <mat-icon>leak_remove</mat-icon>
+    </button>
+    <button mat-icon-button (click)="logout()">
+        <mat-icon>logout</mat-icon>
+    </button>
+</mat-toolbar>
+
+<div class="mat-app-background" style="height: calc(100vh - 64px);overflow-y: auto; display: block">
+
+    <div>
+        <div fxFlex="10%" fxFlex.lt-sm="0"></div>
+        <div fxFlex="80%" fxFlex.lt-sm="100%">
+            <!--                        <div class="p-1">-->
+            <!--                            <pre *ngIf="userBlueprintService.document.data">{{ userBlueprintService.document.data | json }}</pre>-->
+            <!--                        </div>-->
+            <!--            <div class="p-1">-->
+            <!--                <pre *ngIf="userBlueprintService.documents.data">{{ userBlueprintService.documents.data | json }}</pre>-->
+            <!--            </div>-->
+            <!--            <div class="p-1">-->
+            <!--                <mat-form-field appearance="fill" *ngIf="entitiesBlueprintService.document.data.person">-->
+            <!--                    <mat-label>Name</mat-label>-->
+            <!--                    <input matInput required name="firstName"-->
+            <!--                           [(ngModel)]="entitiesBlueprintService.document.data.person.firstName"/>-->
+            <!--                </mat-form-field>-->
+            <!--                <mat-form-field appearance="fill" *ngIf="entitiesBlueprintService.document.data.person">-->
+            <!--                    <mat-label>Last Name</mat-label>-->
+            <!--                    <input matInput required name="lastName"-->
+            <!--                           [(ngModel)]="entitiesBlueprintService.document.data.person.lastName"/>-->
+            <!--                </mat-form-field>-->
+            <!--                <button class="pr-1" mat-raised-button color="primary"-->
+            <!--                        (click)="save()">-->
+            <!--                    &lt;!&ndash;          <mat-icon>save_alt</mat-icon>&ndash;&gt;-->
+            <!--                    save-->
+            <!--                </button>-->
+
+            <!--                {{entitiesBlueprintService.document | json}}-->
+            <!--            </div>-->
+            <!--            <div class="p-1" *ngIf="entitiesBlueprintService.documents.data">-->
+            <!--                <pre *ngFor="let entity of entitiesBlueprintService.documents.data" (click)="editEntity(entity)">-->
+            <!--                    {{ entity | json }}-->
+            <!--                </pre>-->
+            <!--            </div>-->
+            <div class="p-1">
+                <router-outlet></router-outlet>
+            </div>
+<!--            <div class="p-1">-->
+<!--                <mat-form-field appearance="outline">-->
+<!--                    <mat-label>Search entity</mat-label>-->
+<!--                    <input matInput-->
+<!--                           name="searchEntity"-->
+<!--                           aria-label="searchEntity"-->
+<!--                           [(ngModel)]="entitiesBlueprintService.search.searchTerm"-->
+
+<!--                           [matAutocomplete]="auto">-->
+<!--                    <mat-autocomplete #auto="matAutocomplete">-->
+<!--                        <mat-option *ngFor="let entity of entitiesBlueprintService.search.data" [value]="entity.name"-->
+<!--                                    (onSelectionChange)="editEntity(entity)">-->
+<!--                            <span>{{entity.name}}</span>-->
+<!--                        </mat-option>-->
+<!--                    </mat-autocomplete>-->
+<!--                </mat-form-field>-->
+<!--            </div>-->
+<!--            <div class="p-1" fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="32px">-->
+<!--                {{ selectedEntity?.data | json}}-->
+<!--            </div>-->
+<!--            <div class="p-1" fxLayout="column" fxLayout.lt-sm="column" fxLayoutGap="32px">-->
+<!--                <button class="pr-1" mat-raised-button color="primary"-->
+<!--                        (click)="entitiesBlueprintService.aggregate.execute()">-->
+<!--                    &lt;!&ndash;          <mat-icon>save_alt</mat-icon>&ndash;&gt;-->
+<!--                    execute-->
+<!--                </button>-->
+<!--                <pre>{{ entitiesBlueprintService.aggregate.data | json}}</pre>-->
+<!--            </div>-->
+        </div>
+        <div fxFlex="10%" fxFlex.lt-sm="0"></div>
+    </div>
+    <!--  <jmt-auth-user></jmt-auth-user>-->
+
+</div>

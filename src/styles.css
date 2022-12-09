@@ -1,0 +1,111 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+app-root {
+    display: block;
+}
+
+jmt-list {
+    display: block;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+.mat-expansion-panel {
+    margin-bottom: 10px !important;
+}
+
+.mat-expansion-panel-header span {
+    font-size: 19px;
+    align-items: baseline;
+}
+
+.mat-expansion-panel-header mat-icon {
+    margin-right: 10px;
+}
+
+.mat-expansion-panel-header span {
+    padding-right: 10px;
+}
+
+.toolbar-spacer {
+    flex: 1 1 auto;
+}
+
+.table-last-col {
+    text-align: right;
+}
+
+.special-date {
+    background-color: red;
+}
+
+.link-hover:hover {
+    cursor: pointer;
+    background: whitesmoke;
+}
+
+.pl-1 {
+    padding-left: 10px;
+}
+
+.pb-1 {
+    padding-bottom: 10px;
+}
+
+.pt-1 {
+    padding-top: 10px;
+}
+
+.pl-5 {
+    padding-left: 50px;
+}
+
+.pr-1 {
+    padding-right: 10px;
+}
+
+.pr-5 {
+    padding-right: 50px;
+}
+
+.p-1 {
+    padding: 10px;
+}
+
+.m-1 {
+    margin: 10px;
+}
+
+.ml-1 {
+    margin-left: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+    align-self: end;
+}
+
+.text-label {
+    color: rgba(0, 0, 0, .6);
+    margin: 0 10px 0 0 !important;
+}
+
+.text-value {
+    margin: 0 10px 0 0 !important;
+}
